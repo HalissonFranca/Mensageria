@@ -56,7 +56,7 @@ public class Servidor {
     }
 
     private static String processarCompra(String detalhes) {
-        // Simulação do processamento da compra
+        // "Processamento de compra pelo servidor"
         System.out.println("Digite 1 para aprovar a compra, e 0 para rejeitar o pedido : " + detalhes);
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
