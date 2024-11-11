@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="447.0" prefWidth="551.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mensageria.cadastrodecontato.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Nome" textAlignment="CENTER" />
+   <TextField fx:id="TxtNome" alignment="TOP_LEFT" />
+   <Label text="E-mail" />
+   <TextField fx:id="TxtEmail" />
+   <Label text="Telefone" />
+   <TextField fx:id="TxtTelefone" prefHeight="12.0" prefWidth="345.0" />
+   <Pane prefHeight="200.0" prefWidth="482.0">
+      <children>
+         <TextField fx:id="txtId" layoutX="34.0" layoutY="8.0" prefHeight="25.0" prefWidth="63.0" />
+         <Label layoutX="6.0" layoutY="12.0" text="ID" />
+      </children>
+   </Pane>
+   <Pane id="PnBotao" prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <Button fx:id="BtSalvar" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#onHelloButtonSalvar" text="Salvar" />
+         <Button fx:id="BtListar" layoutX="453.0" layoutY="8.0" mnemonicParsing="false" onAction="#onHelloButtonlistar" text="Listar" />
+         <Button fx:id="BtExcluir" layoutX="233.0" layoutY="5.0" mnemonicParsing="false" onAction="#onHelloButtonEcluir" text="Excluir" />
+      </children>
+   </Pane>
+   <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <bottom>
+         <Label text="Aluno: Halisson Franca Martins" BorderPane.alignment="CENTER" />
+      </bottom>
+   </BorderPane>
+</VBox>
